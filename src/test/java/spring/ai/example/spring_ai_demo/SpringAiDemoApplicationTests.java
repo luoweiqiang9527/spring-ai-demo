@@ -13,7 +13,7 @@ class SpringAiDemoApplicationTests {
 	@Test
 	void contextLoads() {
 		ChatClient chatClient = builder.build();
-		String response = chatClient.prompt("用小红书写作的方式描述一下江西省宜春樟树市。").call().content();
+		String response = chatClient.prompt("给我讲过笑话吧。").call().content();
 		System.out.println(response);
 	}
 
